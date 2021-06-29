@@ -1,0 +1,4 @@
+2021-06-29 21:33:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Значение слишком длинное для поля "FULL_URL VARCHAR(255)": "'https://yandex.ru/news/story/Bolee_7_tysyach_chelovek_ostalis_bezehlektrichestva_vVologodskoj_oblasti_iz-zagrozy--9b6571f53874b... (361)"
+Value too long for column "FULL_URL VARCHAR(255)": "'https://yandex.ru/news/story/Bolee_7_tysyach_chelovek_ostalis_bezehlektrichestva_vVologodskoj_oblasti_iz-zagrozy--9b6571f53874b... (361)"; SQL statement:
+insert into shrt_url (full_url, short_url) values (?, ?) [22001-200]

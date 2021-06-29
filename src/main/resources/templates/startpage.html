@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Сокращатель ссылок</title>
+</head>
+<body>
+
+    <h1>Сокращение ссылок</h1>
+
+<form action="#" th:action="@{/}" th:object="${Short}" method="post">
+
+        <table>
+            <td>
+                <tr>
+                    <td>url:</td>
+                    <td>
+                        <input type="text" th:field="${short.url}"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Добавить"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Результат:</td>
+                    <td><input type="text" th:field="${short.shorter}"/></td>
+                </tr>
+            </td>
+        </table>
+
+    </form>
+</body>
+</html>
